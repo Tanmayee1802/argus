@@ -1,0 +1,25 @@
+{
+  "name": "argus-agent",
+  "version": "1.0.0",
+  "description": "Argus autonomous risk guardian agent",
+  "main": "dist/runner.js",
+  "scripts": {
+    "dev": "ts-node src/runner.ts",
+    "build": "tsc",
+    "start": "node dist/runner.js"
+  },
+  "dependencies": {
+    "@mysten/sui": "1.28.2",
+    "express": "4.18.2",
+    "dotenv": "16.3.1",
+    "axios": "1.6.0",
+    "cors": "2.8.5"
+  },
+  "devDependencies": {
+    "typescript": "5.3.3",
+    "ts-node": "10.9.2",
+    "@types/express": "4.17.21",
+    "@types/node": "20.11.5",
+    "@types/cors": "2.8.17"
+  }
+}

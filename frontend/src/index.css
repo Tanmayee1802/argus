@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: #000;
+  color: #e0e0e0;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 14px;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #000; }
+::-webkit-scrollbar-thumb { background: rgba(0,255,200,0.3); border-radius: 2px; }
+
+.btn {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 3px;
+  padding: 10px 22px;
+  border: 1px solid rgba(0,255,200,0.4);
+  background: transparent;
+  color: rgba(0,255,200,0.85);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+.btn:hover { background: rgba(0,255,200,0.1); border-color: rgba(0,255,200,0.8); }
+.btn-danger { border-color: rgba(255,30,60,0.4); color: rgba(255,30,60,0.85); }
+.btn-danger:hover { background: rgba(255,30,60,0.1); border-color: rgba(255,30,60,0.8); }
+
+.card {
+  background: rgba(0,255,200,0.03);
+  border: 1px solid rgba(0,255,200,0.12);
+  padding: 22px;
+}
+
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 40px;
+  background: rgba(0,0,0,0.85);
+  border-bottom: 1px solid rgba(0,255,200,0.1);
+  backdrop-filter: blur(10px);
+}
+
+nav .logo {
+  font-family: 'Orbitron', monospace;
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 6px;
+  color: #fff;
+  cursor: pointer;
+}
+
+nav .nav-links {
+  display: flex;
+  gap: 36px;
+  list-style: none;
+}
+
+nav .nav-links a {
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: rgba(255,255,255,0.45);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav .nav-links a:hover,
+nav .nav-links a.active { color: rgba(0,255,200,0.9); }

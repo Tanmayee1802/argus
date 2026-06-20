@@ -1,0 +1,25 @@
+name = "argus-agent"
+main = "src/index.ts"
+compatibility_date = "2024-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+[triggers]
+crons = ["* * * * *"]
+
+[[kv_namespaces]]
+binding = "ARGUS_KV"
+id = "e34a9092cd7d4ff7887320740dc8404d"
+
+[vars]
+SUI_RPC_URL = "https://fullnode.testnet.sui.io:443"
+PACKAGE_ID = "0x1fb3180e24c981f523d89bb78c638c6be1019c7d619f19708f2bd23c8f99cf6f"
+POOL_ID = "0xdd98e483bba7bcd2443c32294b8ad83fd9a3e7f18a9ab8c51450bda31b700a38"
+ACTION_LOG_ID = "0x47a046473e3dc6b9d6ff8a427fd886df8be424b6decb5b733e2c33b211e330e2"
+ARGUS_POLICY_ID = "0x16e8d05eebc40372bb1ccee6c0b86fd667689ed31cec584a9cfaa156a9c902c7"
+DAO_POLICY_ID = "0x02fe5bb520ad4374b8a63626be277f0a3d6930c8d98ab3effea853601914cdee"
+WALRUS_AGGREGATOR = "https://aggregator.walrus-testnet.walrus.space"
+WALRUS_MODEL_BLOB_ID = "d6mFT8hJJnP3Ic_uOdY0zccFCdRV8hQkg_35OTC3I48"
+PYTH_SUI_USD_FEED = "0x23d7315113f5b1d3ba7a83604c44b94d79f4fd69af77f804fc7f920a6dc65744"
+PYTH_BTC_USD_FEED = "0xe62df6c8b4a85fe1a67db44dc12de5db330f7ac66b72dc658afedf0f4a415b43"
+HERMES_URL = "https://hermes.pyth.network"
+CLOCK_OBJ = "0x6"
