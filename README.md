@@ -1,13 +1,18 @@
-# 🔱 Argus — Autonomous Risk Guardian for Sui DeFi
+# Argus — Autonomous Risk Guardian for Sui DeFi
 
-The first autonomous AI risk guardian for Sui DeFi lending pools — monitoring live Pyth price feeds, computing a 5-factor risk score every minute, and firing protective on-chain actions automatically before human damage control is possible.
+![Live Demo](https://img.shields.io/badge/Live_Demo-argus--guardian.pages.dev-00b4d8?style=flat-square)
+![Network](https://img.shields.io/badge/Network-Sui_Testnet-4f46e5?style=flat-square)
+![Hackathon](https://img.shields.io/badge/Hackathon-Sui_Overflow_2026-7c3aed?style=flat-square)
+![License](https://img.shields.io/badge/License-MIT-854d0e?style=flat-square)
 
-🔗 Live Demo: argus-guardian.pages.dev
-⚙️ Agent API: argus-agent.karthik260406t.workers.dev/state
+> The first autonomous AI risk guardian for Sui DeFi lending pools — monitoring live Pyth price feeds, computing a 5-factor risk score every minute, and firing protective on-chain actions automatically before human damage control is possible.
+
+**Live Demo:** argus-guardian.pages.dev  
+**Agent API:** argus-agent.karthik260406t.workers.dev/state
 
 ---
 
-## 🎯 What is Argus?
+## What is Argus?
 
 DeFi lending pools are vulnerable to sudden price crashes. When SUI drops 20% in minutes, human teams can't react fast enough — bad debt accumulates, liquidation cascades begin, and millions are lost before anyone pauses the pool.
 
@@ -20,7 +25,7 @@ DeFi lending pools are vulnerable to sudden price crashes. When SUI drops 20% in
 
 ---
 
-## 🏆 Hackathon Tracks
+## Hackathon Tracks
 
 | Track | Prize Pool | Why We Qualify |
 |-------|-----------|----------------|
@@ -32,36 +37,36 @@ DeFi lending pools are vulnerable to sudden price crashes. When SUI drops 20% in
 
 ---
 
-## ✨ Key Features
+## Key Features
 
-### 🛡️ Autonomous Risk Engine
+### Autonomous Risk Engine
 - 5-factor composite risk score computed every 60 seconds
 - 5 alert levels from GREEN to BLACK with graduated automated responses
 - No human intervention required — Argus acts before damage occurs
 
-### 🗄️ Walrus Model Storage
+### Walrus Model Storage
 - Risk model weights and thresholds stored encrypted on Walrus decentralised storage
 - DAO updates the model by uploading a new config blob — zero contract redeployment needed
 - Argus reads new parameters within 5 minutes
 
-### 📋 On-Chain Reasoning
+### On-Chain Reasoning
 - Every autonomous action stores the full 5-factor score breakdown on-chain
 - Not just *what* happened — but *why* it triggered
 - Fully auditable, forever
 
-### 🔐 2-of-3 DAO Multisig
+### 2-of-3 DAO Multisig
 - Any autonomous action can be reversed by 2 of 3 guardian addresses
 - No redeployment required
 - Humans always have the final word
 
-### 🔮 Pyth Oracle Integration
+### Pyth Oracle Integration
 - Real-time SUI/USD and BTC/USD prices from Pyth Network
 - Stale price protection — rejects prices older than 60 seconds
 - Oracle confidence degradation is itself a risk factor
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 Pyth Network (SUI/USD + BTC/USD)
@@ -86,7 +91,7 @@ React + Vite + Three.js Frontend (Cloudflare Pages)
 
 ---
 
-## 📦 Smart Contracts
+## Smart Contracts
 
 **Package Address**
 ```
@@ -143,7 +148,7 @@ public fun log_action(
 
 ---
 
-## 📊 5-Factor Risk Model
+## 5-Factor Risk Model
 
 Each 1-minute cycle computes a weighted composite score (0–100):
 
@@ -157,7 +162,7 @@ Each 1-minute cycle computes a weighted composite score (0–100):
 
 ---
 
-## 🚨 Alert Levels & Automated Actions
+## Alert Levels & Automated Actions
 
 | Score | Level | Automated Action |
 |-------|-------|-----------------|
@@ -169,7 +174,7 @@ Each 1-minute cycle computes a weighted composite score (0–100):
 
 ---
 
-## 🔑 Deployed Objects (Sui Testnet)
+## Deployed Objects (Sui Testnet)
 
 ```
 Package:      0x1fb3180e24c981f523d89bb78c638c6be1019c7d619f19708f2bd23c8f99cf6f
@@ -182,7 +187,7 @@ Walrus Blob:  d6mFT8hJJnP3Ic_uOdY0zccFCdRV8hQkg_35OTC3I48
 
 ---
 
-## 🖥️ Frontend
+## Frontend
 
 Built with React + Vite + Three.js, deployed on Cloudflare Pages.
 
@@ -219,7 +224,7 @@ Accents:    #00ff88 (green) · #ff4444 (red) · #ffaa00 (amber) · #6366f1 (indi
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 argus/
@@ -241,7 +246,7 @@ argus/
 
 ---
 
-## 🚀 How to Run Locally
+## How to Run Locally
 
 **Prerequisites**
 - Node.js 18+
@@ -270,7 +275,7 @@ wrangler dev
 
 ---
 
-## 🎮 Demo Flow
+## Demo Flow
 
 1. Visit [argus-guardian.pages.dev](https://argus-guardian.pages.dev)
 2. Connect Slush wallet on Sui Testnet
@@ -280,7 +285,7 @@ wrangler dev
 
 ---
 
-## 🔄 How Autonomous Action Works
+## How Autonomous Action Works
 
 ```
 Agent wakes (every 60s)
@@ -308,7 +313,7 @@ Agent wakes (every 60s)
 
 ---
 
-## 📊 On-Chain Proof
+## On-Chain Proof
 
 | Action | Transaction |
 |--------|------------|
@@ -319,7 +324,7 @@ Agent wakes (every 60s)
 
 ---
 
-## 🗺️ Roadmap
+## Roadmap
 
 - [ ] Mainnet deployment
 - [ ] Multi-asset support (BTC, ETH collateral pools)
@@ -330,7 +335,7 @@ Agent wakes (every 60s)
 
 ---
 
-## 👥 Team
+## Team
 
 Karthik Thalari — @karthik26-Thalari
 
@@ -344,6 +349,6 @@ VIT-AP University · Submission for Sui Overflow 2026
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License — see the LICENSE file for details.
