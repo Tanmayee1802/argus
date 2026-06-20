@@ -1,9 +1,9 @@
 # Argus — Autonomous Risk Guardian for Sui DeFi
 
-![Live Demo](https://img.shields.io/badge/Live_Demo-argus--guardian.pages.dev-00b4d8?style=flat-square)
-![Network](https://img.shields.io/badge/Network-Sui_Testnet-4f46e5?style=flat-square)
-![Hackathon](https://img.shields.io/badge/Hackathon-Sui_Overflow_2026-7c3aed?style=flat-square)
-![License](https://img.shields.io/badge/License-MIT-854d0e?style=flat-square)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-argus--guardian.pages.dev-00b4d8?style=flat-square)](https://argus-guardian.pages.dev)
+[![Network](https://img.shields.io/badge/Network-Sui_Testnet-4f46e5?style=flat-square)](https://testnet.suivision.xyz/)
+[![Hackathon](https://img.shields.io/badge/Hackathon-Sui_Overflow_2026-7c3aed?style=flat-square)](https://sui.io/overflow)
+[![License](https://img.shields.io/badge/License-MIT-854d0e?style=flat-square)](LICENSE)
 
 > The first autonomous AI risk guardian for Sui DeFi lending pools — monitoring live Pyth price feeds, computing a 5-factor risk score every minute, and firing protective on-chain actions automatically before human damage control is possible.
 
